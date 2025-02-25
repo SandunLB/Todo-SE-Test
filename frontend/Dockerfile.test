@@ -7,5 +7,4 @@ RUN npm install
 
 COPY . .
 
-# Default command to start the server
-CMD ["node", "server.js"]
+CMD ["npm", "test"]
