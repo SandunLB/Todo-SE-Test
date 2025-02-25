@@ -37,7 +37,7 @@ The application follows the required 3-component architecture:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/sandunlb/Todo-SE-Test.git
    cd todo-app
    ```
 
@@ -61,7 +61,7 @@ Use Docker Compose for testing:
 
 1. **Clone the Repository**:
    ```
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/sandunlb/Todo-SE-Test.git
    cd todo-app
    ```
 
