@@ -35,15 +35,57 @@ The application follows the required 3-component architecture:
 
 ### Installation & Running
 
-1. Clone the repository
-2. Start all services using Docker Compose
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/todo-app.git
+   cd todo-app
+   ```
+
+2. Start all services using Docker Compose:
+   ```
+   docker-compose up -d
+   ```
+
 3. Access the application:
    - Frontend interface: `http://localhost:8080`
    - Backend API: `http://localhost:3000/api/tasks`
 
 ### Running Tests
 
-Use Docker Compose for testing.
+Use Docker Compose for testing:
+   ```
+   docker-compose -f docker-compose.test.yml up
+   ```
+
+## How to Run the Project
+
+1. **Clone the Repository**:
+   ```
+   git clone https://github.com/yourusername/todo-app.git
+   cd todo-app
+   ```
+
+2. **Start the Services**:
+   - Run the following command to start the database, backend, and frontend:
+     ```
+     docker-compose up -d
+     ```
+
+3. **Check Running Containers**:
+   - Ensure that all services are up and running:
+     ```
+     docker ps
+     ```
+
+4. **Access the Application**:
+   - Open your browser and go to `http://localhost:8080` to access the frontend.
+   - The backend API can be accessed at `http://localhost:3000/api/tasks`.
+
+5. **Stopping the Application**:
+   - To stop all running containers:
+     ```
+     docker-compose down
+     ```
 
 ## Implementation Details
 
