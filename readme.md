@@ -1,4 +1,4 @@
-# Senior Full Stack Engineer Take Home Assessment: Todo Application
+# Todo Application with docker
 
 This repository contains a full-stack Todo application built to meet the requirements specified in the take-home assessment. The application allows users to create, view, and complete todo tasks through a web interface.
 
