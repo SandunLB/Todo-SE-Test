@@ -38,7 +38,6 @@ describe('Todo API Endpoints', () => {
       // Verify the response
       expect(response.status).toBe(200);
       expect(response.body).toEqual(mockTasks);
-      // Just check if the query contains the expected string, without asserting parameters
       expect(pool.query.mock.calls[0][0]).toContain('WHERE is_completed = false');
     });
 
@@ -113,9 +112,6 @@ describe('Todo API Endpoints', () => {
       
       // Check just the query string contains the expected text
       expect(pool.query.mock.calls[0][0]).toContain('UPDATE tasks');
-      
-      // For the parameters, we now specifically check that the parameter matches
-      // what's actually passed (string or number)
       expect(pool.query.mock.calls[0][1]).toEqual([taskId.toString()]);
     });
 
